@@ -1,35 +1,166 @@
+* {
+  font-family: "Roboto";
+}
+
+body {
+  margin: 0;
+}
+
+.main-header {
+  background-color: #3A77D2;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  top: 0;
+  border-bottom: 1px solid black;
+  /* box-shadow: 0px 5px 30px 2px rgba(0, 0, 0, .3); */
+}
+
 nav{
-  background-color: aliceblue;
-  padding: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #3A77D2;
+}
+
+.nav-bar {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
   display: flex;
-  gap:1em;
+  flex-direction: column;
+  gap: 0.5em;
+  clear: both;
+  max-height: 0;
+  transition: max-height .3s ease;
+}
+
+.nav-bar_item {
+  text-align: center;
+  padding: 10px;
+}
+
+.nav-bar_item a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav-bar_item a:hover {
+  font-weight: bold;
+}
+
+/* Menu icon */
+
+.menu-icon {
+  float: right;
+  padding: 10px 5px;
+  position: relative;
+  margin-right: 20px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.nav-icon {
+  background: white;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.nav-icon:before,
+.nav-icon:after {
+  background: white;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.nav-icon:before {
+  top: 5px;
+}
+
+.nav-icon:after {
+  top: -5px;
+}
+
+/* Menu button (menu animations) */
+
+.main-header .menu-btn {
+  display: none;
+}
+
+.menu-btn:checked ~ .nav-bar {
+  max-height: 240px;
+}
+
+.menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+}
+
+.menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+}
+
+.menu-btn:checked ~ .menu-icon:not(.steps) .nav-icon:before,
+.menu-btn:checked ~ .menu-icon:not(.steps) .nav-icon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .nav-bar_item {
+    /* padding: 5px; */
+  }
+  .nav-bar_item a {
+    font-size: 16px;
+  }
+  .nav-bar {
+    margin-right: 10px;
+    justify-content: end;
+    max-height: none;
+    flex-direction: row;
+  }
+  .menu-icon {
+    display: none;
+  }
 }
 
 main{
+  margin-top: 40px;
   text-align: center;
-  max-width: 960px;
-  margin:0 auto;
 }
 
-section{
-  margin-top: 3rem;
-}
 
-.cursos div{
-  background-color: black;
-  color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
-}
+
+
+
+
+
+
+
+
+
 .fotos img{
   max-width: 450px;
   display: inline-block;
 }
+
 ul li{
   text-align: left;
 }
-ul li::marker {
+
+.roadmap_item::marker {
   content: "🚀";
 }
 

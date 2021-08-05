@@ -5,19 +5,27 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
+  <title>Galería de Cody</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+  <header class="main-header">
+    <nav>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+
+      <ul class="nav-bar">
+        <li class="nav-bar_item"><a href="/">Inicio</a></li>
+        <li class="nav-bar_item"><a href="fotos.html">Fotos</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h2>Galería completa de mis vacaciones</h2>
-    </header>
     <div class="fotos">
       <img src="images/1.jpg" alt="Cody en la playa">
       <img src="images/2.jpg" alt="Cody acampando">
@@ -25,9 +33,7 @@
       <img src="images/4.jpg" alt="Cody en una alberca">
       <img src="images/5.jpg" alt="Cody en una alberca">
       <img src="images/6.jpg" alt="Cody en una alberca">
-      
     </div>
-
   </main>
 </body>
 
