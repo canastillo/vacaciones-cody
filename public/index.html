@@ -14,11 +14,12 @@
 </head>
 
 <body>
-  <header class="main-header">
+  <div class="shade hidden" id="shade"></div>
+
+  <header class="main-header" id="main-header">
     <nav>
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
-
       <ul class="nav-bar">
         <li class="nav-bar_item"><a href="/">Inicio</a></li>
         <li class="nav-bar_item"><a href="fotos.html">Fotos</a></li>
@@ -37,9 +38,9 @@
       </div>
     </div>
 
-    <section>
+    <section class="vacations">
       <div>
-        <h2>Mis vacaciones Frontend</h2>
+        <h2 class="underline underline--pink">Mis vacaciones Frontend</h2>
 
         <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje,
           estuve
@@ -62,7 +63,7 @@
     <section class="roadmap">
       <div>
         <header>
-          <h2>Ruta de aprendizaje 2021</h2>
+          <h2 class="underline underline--blue">Ruta de aprendizaje 2021</h2>
           <p> También me propuse aprender nuevas tecnologías durante 2021</p>
         </header>
 
@@ -76,9 +77,10 @@
       </div>
     </section>
 
-    <section>
+    <section class="colab">
+      <img src="./images/github-logo.webp" alt="">
       <div>
-        <h2>Colabora en mi página</h2>
+        <h2 class="underline">Colabora en mi página</h2>
 
         <p>
           Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a
@@ -92,10 +94,9 @@
           <a href="" target="_blank">Ir al tutorial</a>
         </p>
       </div>
-
     </section>
 
-    <section>
+    <section class="gallery">
       <div>
 
         <header>
@@ -103,24 +104,24 @@
           <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
         </header>
 
-        <div class="fotos">
+        <div class="pictures">
           <img src="images/1.jpg" alt="Cody en la playa">
           <img src="images/2.jpg" alt="Cody acampando">
           <img src="images/3.jpg" alt="Cody en una alberca">
-          <p>
-            Puedes ver más, en la galería de fotos de mi página
-            <a href="fotos.html">Ir a la galería</a>
-          </p>
         </div>
+
+        <p>
+          Puedes ver más, en la galería de fotos de mi página
+          <a href="fotos.html">Ir a la galería</a>
+        </p>
       </div>
 
     </section>
 
-    <section>
+    <section class="conclusion">
       <div>
-
         <header>
-          <h2>La importancia de las vacaciones</h2>
+          <h2 class="underline">La importancia de las vacaciones</h2>
           <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente
             nos desconectemos y descansemos apropiadamente</p>
         </header>
@@ -137,6 +138,8 @@
     </section>
 
   </main>
+
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

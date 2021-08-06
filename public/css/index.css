@@ -1,19 +1,7 @@
-.intro-container {
-  padding-top: 10px;
-  padding-bottom: 20px;
-  background-color: #3A77D2;
-}
-
-.intro {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
-}
-
 section {
   padding-top: 10px;
   padding-bottom: 10px;
+  border-bottom: 1px solid black;
 }
 
 section > div{
@@ -22,8 +10,56 @@ section > div{
   margin-right: auto;
 }
 
+.intro-container {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-color: #fafafa;
+}
+
+.intro {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #1f222c;
+  display: flex;
+  flex-direction: column;
+  gap: .1em;
+}
+
+.intro img {
+  max-width: 400px;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
 p {
   font-size: 17px;
+}
+
+.vacations {
+  background-color: #6F58FD;
+  border-top: 1px solid black;
+  color: white;
+}
+
+.underline::after {
+  content: '';
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -10px;
+  width: 90%;
+  height: 10px;
+}
+
+.underline--pink::after {
+  background-color: #fd63d5;
+}
+
+.underline--blue::after {
+  background-color: #fd63d5;
 }
 
 .courses {
@@ -39,10 +75,46 @@ p {
   color: white;
   max-width: 200px;
   padding: 7px;
-  /* display: inline-block; */
-  /* box-shadow: 5px 5px 10px black; */
 }
 
 .roadmap {
-  background-color: #6F58FD;
+  background-color: #4dd1ff;
+  color: #222;
 }
+
+.colab {
+  background-color: #f8cd5b;
+  color: #111;
+}
+
+.colab h2 {
+  margin-top: 10px;
+}
+
+.colab img {
+ max-width: 200px;
+}
+
+.gallery {
+  background-color: #171738;
+  color: white;
+}
+
+.pictures {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.conclusion {
+  background-color: #fd63d5;
+  color: white;
+}
+
+/* Azul: #4dd1ff
+Rosa: #fd63d5
+Amarillo: #f8cd5b
+Gris: #fafafa
+Negro: #1f222c
+Azul oscuro: #3A77D2
+Morado: #6F58FD */
