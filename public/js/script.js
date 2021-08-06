@@ -6,15 +6,15 @@ menuButton.addEventListener('change', () => {
         nav.style.backgroundColor = "#fd63d5"
 
         let shade = document.querySelector('#shade')
-        shade.classList.remove("hidden")
-        shade.classList.add("showing")
+        shade.classList.remove("shade--hidden")
+        shade.classList.add("shade--showing")
     } else {
         let nav = document.querySelector('nav')
         nav.style.backgroundColor = "rgba(250, 250, 250, .9)"
 
         let shade = document.querySelector('#shade')
-        shade.classList.remove("showing")
-        shade.classList.add("hidden")
+        shade.classList.remove("shade--showing")
+        shade.classList.add("shade--hidden")
     }
 })
 
