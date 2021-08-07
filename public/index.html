@@ -105,10 +105,19 @@
           <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
         </header>
 
-        <div class="pictures">
-          <img src="images/1.jpg" alt="Cody en la playa">
-          <img src="images/2.jpg" alt="Cody acampando">
-          <img src="images/3.jpg" alt="Cody en una alberca">
+        <div class="carousel-container">
+          <button class="indicator indicator--left" id="indicator--left"><i class="fas fa-chevron-left"></i></button>
+          <button class="indicator indicator--right" id="indicator--right"><i class="fas fa-chevron-right"></i></button>
+          <div id="myProgress">
+            <div id="myBar"></div>
+          </div>
+          <div class="carousel" id="carousel">
+            <div class="pictures">
+              <div class="picture"><img src="images/1.jpg" alt="Cody en la playa"></div>
+              <div class="picture"><img src="images/2.jpg" alt="Cody acampando"></div>
+              <div class="picture"><img src="images/3.jpg" alt="Cody en una alberca"></div>
+            </div>
+          </div>
         </div>
 
         <p>
@@ -140,16 +149,17 @@
 
   <footer>
     <div class="footer">
-        <p>Hecho con mucho cariño ❤️ por Ana Castillo</p>
-        <div class="social">
-            <a href="https://github.com/canastillo/vacaciones-cody/tree/main"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/canastillo/"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://twitter.com/canastillo_"><i class="fab fa-twitter"></i></a>
-        </div>
+      <p>Hecho con mucho cariño ❤️ por Ana Castillo</p>
+      <div class="social">
+        <a href="https://github.com/canastillo/vacaciones-cody/tree/main"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/canastillo/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://twitter.com/canastillo_"><i class="fab fa-twitter"></i></a>
+      </div>
     </div>
-</footer>
+  </footer>
 
-  <script src="./js/script.js"></script>
+  <script src="./js/menu.js"></script>
+  <script src="./js/carousel.js"></script>
 </body>
 
 </html>

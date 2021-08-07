@@ -48,7 +48,7 @@ nav{
   font-weight: bold;
 }
 
-/* Menu icon */
+/* Burger menu icon */
 
 .menu-icon {
   float: right;
@@ -87,7 +87,6 @@ nav{
   top: -5px;
 }
 
-
 /* Menu button (menu animations) */
 
 .main-header .menu-btn {
@@ -117,7 +116,7 @@ nav{
   top: 0;
 }
 
-/* Responsive menu */
+/* Navbar for medium screen sizes */
 
 @media (min-width: 768px) {
   nav {
@@ -141,6 +140,7 @@ nav{
   }
 }
 
+/* Shade under mobile menu */
 
 .shade {
   position: fixed;
@@ -151,6 +151,7 @@ nav{
   background-color: black;
   opacity: .4;
   transition: opacity .5s linear;
+  z-index: 2; /* To be over carousel and indicators */
 }
 
 .shade--hidden {
@@ -168,37 +169,7 @@ main{
   text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-.fotos img{
-  max-width: 450px;
-  display: inline-block;
-}
-
-ul li{
-  text-align: left;
-}
-
-.roadmap_item::marker {
-  content: "🚀";
-}
-
-ol li{
-  text-align: left;
-}
-
-
-
-
-
+/* Footer */
 
 footer {
   background-color: darkorange;

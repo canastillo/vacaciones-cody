@@ -1,3 +1,4 @@
+// Change navbar background color. Show and hide shade
 let menuButton = document.querySelector('#menu-btn')
 
 menuButton.addEventListener('change', () => {
@@ -19,16 +20,19 @@ menuButton.addEventListener('change', () => {
 })
 
 
+// Close navbar when clicking on shade
 let shade = document.querySelector('#shade')
 
 shade.addEventListener('click', () => {
     let menuButton = document.querySelector('#menu-btn')
     let change = new Event('change');
+
     menuButton.checked = false
     menuButton.dispatchEvent(change)
 })
 
 
+// Change nav background color on scrolling
 window.onscroll = function () {
     if (window.scrollY != 0) {
         header = document.querySelector('#main-header')
@@ -39,7 +43,7 @@ window.onscroll = function () {
     }
 }
 
-
+// Change navbar background color depending on window width
 window.onresize = function () {
     let menuButton = document.querySelector('#menu-btn')
     let shade = document.querySelector('#shade')
