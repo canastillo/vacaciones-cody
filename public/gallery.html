@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las vacaciones de Cody</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7e8924c825.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/gallery.css">
+</head>
+
+<body>
+    <div class="shade shade--hidden" id="shade"></div>
+
+    <header class="main-header" id="main-header">
+        <nav>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+            <ul class="nav-bar">
+                <li class="nav-bar_item"><a href="/">Inicio</a></li>
+                <li class="nav-bar_item"><a href="fotos.html">Fotos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="pictures">
+            <div class="picture" onclick="openLightbox();toSlide(1)">
+                <svg class="graphic graphic--triangle">
+                    <path
+                          d="M 0,50 L 50,0 L 100,50 z"
+                          fill="#fd63d5"
+                          stroke="black"
+                          stroke-width="2"/>
+                  </svg>
+                <img src="./images/1.jpg" />
+            </div>
+            <div class="picture" onclick="openLightbox();toSlide(2)">
+                <svg class="graphic graphic--circle">
+                    <circle 
+                        cx="60" 
+                        cy="40" 
+                        r="28" 
+                        fill="#6F58FD" 
+                        stroke="black" 
+                        stroke-width="2"/>
+                </svg>
+                <img src="./images/2.jpg"/>
+            </div>
+            <div class="picture" onclick="openLightbox();toSlide(3)">
+                <img src="./images/3.jpg"/>
+            </div>
+            <div class="picture" onclick="openLightbox();toSlide(4)">
+                <svg class="graphic--rectangle">
+                    <rect 
+                        x="10" 
+                        y="10" 
+                        width="130" 
+                        height="40" 
+                        fill="darkorange"
+                        stroke="black"
+                        stroke-width="2"></rect>
+                </svg>
+                <img src="./images/4.jpg"/>
+            </div>
+            <div class="picture" onclick="openLightbox();toSlide(5)">
+                <img src="./images/5.jpg"/>
+            </div>
+            <div class="picture" onclick="openLightbox();toSlide(6)">
+                <svg class="graphic graphic--donut">
+                    <circle
+                        cx="50" 
+                        cy="50" 
+                        r="30" 
+                        fill="transparent" 
+                        stroke-width="22" 
+                        stroke="black"
+                    />
+                    <circle 
+                        cx="50" 
+                        cy="50" 
+                        r="30" 
+                        fill="transparent" 
+                        stroke-width="20" 
+                        stroke="#00CCFF"/>
+                </svg>
+                <img src="./images/6.jpg"/>
+            </div>
+        </div>
+
+        <div id="lightbox" class="modal">
+            <span class="close pointer" onclick="closeLightbox()">&times;</span>
+
+            <div class="modal-content">
+                <div class="slide">
+                    <img src="./images/1.jpg" class="image-slide" alt="Cody en la playa"/>
+                    <p class="image-description">Paseando por la playa en bici</p>
+                </div>
+                <div class="slide">
+                    <img src="./images/2.jpg" class="image-slide" alt="Cody acampando"/>
+                    <p class="image-description">Acampando a la orilla del mar</p>
+                </div>
+                <div class="slide">
+                    <img src="./images/3.jpg" class="image-slide" alt="Cody en una alberca"/>
+                    <p class="image-description">Relajándome en la piscina</p>
+                </div>
+                <div class="slide">
+                    <img src="./images/4.jpg" class="image-slide" alt="Cody en la arena"/>
+                    <p class="image-description">Relajándome con las olas</p>
+                </div>
+                <div class="slide">
+                    <img src="./images/5.jpg" class="image-slide" alt="Cody en el barrio"/>
+                    <p class="image-description">Recorriendo las calles</p>
+                </div>
+                <div class="slide">
+                    <img src="./images/6.jpg" class="image-slide" alt="Cody en el aeropuerto"/>
+                    <p class="image-description">¡Perdí el avión de regreso!</p>
+                </div>
+
+            </div>
+            <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p>Hecho con mucho cariño ❤️ por Ana Castillo</p>
+            <div class="social">
+                <a href="https://github.com/canastillo/vacaciones-cody/tree/main"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/canastillo/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://twitter.com/canastillo_"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/menu.js"></script>
+    <script src="./js/lighthouse.js"></script>
+</body>
+
+</html>

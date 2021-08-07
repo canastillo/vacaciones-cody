@@ -1,7 +1,7 @@
 section {
   padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
 }
 
 section > div{
@@ -44,7 +44,7 @@ p {
 
 .vacations {
   background-color: #6F58FD;
-  border-top: 1px solid black;
+  border-top: 2px solid black;
   color: white;
 }
 
@@ -159,7 +159,7 @@ p {
 
 .conclusion {
   background-color: #fd63d5;
-  color: white;
+  font-size: 18px;
 }
 
 /* Decorating subtitles */
@@ -191,7 +191,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  border: 1px solid black;
+  border: 2px solid black;
   text-decoration: none;
   font-weight: bold;
   color: black;
@@ -199,7 +199,6 @@ p {
 
 .link-button--purple {
   background-color: #fd63d5;
-  /* color: white; */
 }
 
 .link-button--blue {

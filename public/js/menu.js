@@ -36,7 +36,7 @@ shade.addEventListener('click', () => {
 window.onscroll = function () {
     if (window.scrollY != 0) {
         header = document.querySelector('#main-header')
-        header.style.borderBottom = "1px solid black"
+        header.style.borderBottom = "2px solid black"
     } else {
         header = document.querySelector('#main-header')
         header.style.borderBottom = "none"
